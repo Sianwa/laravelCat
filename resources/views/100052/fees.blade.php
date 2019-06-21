@@ -88,7 +88,7 @@ body {
                 <option value="2">Pay in bits</option>
           </select>
       <label for="inputAmount" class="sr-only">Amount</label>
-      <input type="text" id="inputAmount" class="form-control" placeholder="Amount" name="Amount" required autofocus>
+      <input type="text" id="inputAmount" class="form-control" placeholder="Amount" name="amount" required autofocus>
 
       <button class="btn btn-lg btn-primary btn-block" type="submit">Pay</button>
 

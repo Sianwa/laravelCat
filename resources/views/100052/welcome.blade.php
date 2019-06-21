@@ -73,6 +73,7 @@
                 <div class="links">
                     <a href="/student">Register Student </a>
                     <a href="/fees">Fees Payment</a>
+                    <a href="/search">Search</a>
                 </div>
 
                 </div>

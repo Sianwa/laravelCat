@@ -17,7 +17,7 @@ class FeesController extends Controller
 	{
 		//create a new student record
 		$validateData= $request->validate([
-			'Amount'=>'required',
+			'amount'=>'required',
 			'date_of_payment'=>'required',
 		]);
 		
