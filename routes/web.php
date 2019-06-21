@@ -28,7 +28,7 @@ Route::post('/search',function(){
 
 	//search
 		$studentID =Input::get('studentID');
-		$student = Fees::where('ID','LIKE','%'.$studentID.'%')->get();
+		$student = Fees::where('id','LIKE','%'.$studentID.'%')->get();
 
 		if(count($student)>0){
 			return view('100052.search')->withDetails($student)->withQuery($studentID);
