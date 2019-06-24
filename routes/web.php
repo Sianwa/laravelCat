@@ -29,9 +29,10 @@ Route::post('/search',function(){
 	//search
 		$studentID =Input::get('studentID');
 		$student = Fees::where('id','LIKE','%'.$studentID.'%')->get();
+		$query = DB::table('fees')->where('id',$studentID)->SUM('amount');
 
 		if(count($student)>0){
-			return view('100052.search')->withDetails($student)->withQuery($studentID);
+			return view('100052.search')->withDetails($student)->withQuery($studentID)->withMessage($query);
 		}
 		else return view('100052.search')->withMessage('No details found.Type Student ID again');
 });
