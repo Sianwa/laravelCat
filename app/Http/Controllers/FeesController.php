@@ -14,19 +14,19 @@ class FeesController extends Controller
 
     	
    public function pay(Request $request)
-	{
-		//create a new student record
+	{ 
 		$validateData= $request->validate([
-			'id'=> 'required|exists:student',
+			'id'=> 'required',
 			'amount'=>'required',
 			'date_of_payment'=>'required',
+			
 		]);
 		
-			Fees::create($request->all());
-		return redirect('/fees')->with('success','Fees payed');  
-		
+		Fees::create($request->all());
+		return redirect('/fees')->with('success','Fee payment succesful');
 
 	}
+	/*
 	public function search(Request $request){
 		$search=$request->get('search');
 		$field=$request->get('field') != '' ? $request->get('field') : 'id';
@@ -35,5 +35,5 @@ class FeesController extends Controller
 		return view('100052.fees',compact('customers'));
 	}
 	
-
+*/
 }

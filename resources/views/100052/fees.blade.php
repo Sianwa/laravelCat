@@ -70,13 +70,13 @@ body {
   <body class="text-center">
 
     <div>
-    <form class="form-signin" method="post" action=" {{ action('FeesController@pay') }}">
+    <form class="form" method="post" action=" {{ action('FeesController@pay') }}">
         {{ csrf_field() }}
       <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
            <h1 class="h3 mb-3 font-weight-normal">Fee Payment</h1>
            
       <label for="inputNumber" class="sr-only">Student Number</label>
-      <input type="text" id="inputNumber" class="form-control" placeholder="Student Number" required autofocus>
+      <input type="text" id="inputNumber" class="form-control" placeholder="Student Number" required  name='id' autofocus>
 
       <label for="dop" class="sr-only">Date of Payment</label>
       <input type="date" id="dop" class="form-control" placeholder="Date of Payment" name="date_of_payment" required autofocus>
