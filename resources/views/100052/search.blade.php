@@ -98,6 +98,13 @@ body {
                 <td>{{$student->date_of_payment}}</td>
             </tr>
             @endforeach
+             <tr>
+        <td>Total: </td>
+        <td>
+            {{$message}}
+        </td>
+        <td></td>
+    </tr>
         </tbody>
     </table>
     @endif

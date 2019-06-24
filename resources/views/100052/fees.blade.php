@@ -68,7 +68,6 @@ body {
   </head>
 
   <body class="text-center">
-
     <div>
     <form class="form" method="post" action=" {{ action('FeesController@pay') }}">
         {{ csrf_field() }}
