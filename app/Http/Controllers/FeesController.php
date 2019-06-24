@@ -27,6 +27,13 @@ class FeesController extends Controller
 		
 
 	}
+	public function search(Request $request){
+		$search=$request->get('search');
+		$field=$request->get('field') != '' ? $request->get('field') : 'id';
+		$customers= fees::where('id','like','%'.$search . '%');
+
+		return view('100052.fees',compact('customers'));
+	}
 	
 
 }
