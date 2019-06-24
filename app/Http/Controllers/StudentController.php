@@ -22,7 +22,7 @@ class StudentController extends Controller
 		]);
 		
 		Student::create($request->all());
-		return redirect('/student');
+		return redirect('/student')->with('success','Student Created'); 
 		
 		/*
 		var_dump(request('FullName'));
