@@ -23,7 +23,7 @@ class FeesController extends Controller
 		]);
 		
 			Fees::create($request->all());
-		return redirect('/fees');
+		return redirect('/fees');  
 		
 
 	}
