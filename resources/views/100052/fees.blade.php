@@ -68,10 +68,14 @@ body {
   </head>
 
   <body class="text-center">
-    <div>
+
+  <div>
     <form class="form" method="post" action=" {{ action('FeesController@pay') }}">
         {{ csrf_field() }}
-      <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <p> <a href="/"> Home </a><a href="/student"> Register </a><a href="/search"> Search </a></p>
+      </div>
            <h1 class="h3 mb-3 font-weight-normal">Fee Payment</h1>
            
       <label for="inputNumber" class="sr-only">Student Number</label>
@@ -95,6 +99,5 @@ body {
       <br>
     </form>  
 </div>
-
   </body>
 </html>
