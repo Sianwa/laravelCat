@@ -74,7 +74,7 @@ body {
       {{ csrf_field() }}
        <p class="font-weight-bold">Search Student Account info</p>
         <div class="text-center mb-4">
-        <p> <a href="/"> Home </a><a href="/student"> Register </a><a href="/search"> Search </a></p>
+        <p> <a href="/"> Home </a><a href="/student"> Register </a><a href="/fees"> Fees </a></p>
       </div>
        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="studentID"><br>
        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

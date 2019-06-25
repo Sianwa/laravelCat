@@ -74,7 +74,7 @@ body {
 
      <div class="text-center mb-4">
         <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <p> <a href="/"> Home </a><a href="/student"> Register </a><a href="/search"> Search </a></p>
+        <p> <a href="/"> Home </a><a href="/fees"> Register </a><a href="/search"> Search </a></p>
       </div>
       <h1 class="h3 mb-3 font-weight-normal">Register Student</h1>
       <label for="inputName" class="sr-only">Full Name</label>
