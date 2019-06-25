@@ -16,7 +16,7 @@ class FeesController extends Controller
    public function pay(Request $request)
 	{ 
 		$validateData= $request->validate([
-			'id'=> 'required',
+			'id'=> 'required|exists:students',
 			'amount'=>'required',
 			'date_of_payment'=>'required',
 			
